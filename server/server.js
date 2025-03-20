@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors())
 app.use(express.json()); // Add this line to parse JSON bodies
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });

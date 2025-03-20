@@ -10,8 +10,8 @@ createRoot(document.getElementById("root")!).render(
     
   <HeroUIProvider>
     <Auth0Provider
-      domain="dev-noq8jx06ofgyidpa.us.auth0.com"
-      clientId="aSXZUzGn0fKWP7XMj9fCemsW30lRfA3U"
+      domain={import.meta.env.VITE_AUTH0_DOMAIN}
+      clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
       authorizationParams={{
         redirect_uri: window.location.origin,
       }}
